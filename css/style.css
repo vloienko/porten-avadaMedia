@@ -131,6 +131,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   color: #ffffff;
+  background-color: #0F0F0F;
 }
 
 body._lock {
@@ -180,6 +181,10 @@ body._lock {
 
 .watch__box {
   font-family: "Playfair Display", serif;
+}
+
+.watch__box:hover p {
+  text-decoration: underline;
 }
 
 .watch__box-bg {
@@ -278,6 +283,10 @@ body._lock {
   margin-right: 15px;
 }
 
+.header-main__phone:hover {
+  text-decoration: underline;
+}
+
 .header-main__work {
   margin-left: 15px;
 }
@@ -314,6 +323,10 @@ body._lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header-main__control:hover {
+  text-decoration: underline;
 }
 
 .header-main__logout {
@@ -388,6 +401,26 @@ body._lock {
 
 .header-body__basket {
   margin-right: 40px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-body__basket:hover {
+  border-color: #ffffff;
 }
 
 .menu__icon {
@@ -429,10 +462,42 @@ body._lock {
           justify-content: center;
   z-index: 999;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 1px solid transparent;
+}
+
+.search .icon:hover {
+  border-color: #ffffff;
 }
 
 .search.active {
   width: 180px;
+}
+
+.search.active .input input {
+  background-color: #ffffff;
+}
+
+.search.active .input input::-webkit-input-placeholder {
+  color: #969696;
+}
+
+.search.active .input input::-moz-placeholder {
+  color: #969696;
+}
+
+.search.active .input input:-ms-input-placeholder {
+  color: #969696;
+}
+
+.search.active .input input::-ms-input-placeholder {
+  color: #969696;
+}
+
+.search.active .input input::placeholder {
+  color: #969696;
 }
 
 .search .input {
@@ -459,7 +524,42 @@ body._lock {
   outline: 0;
   border: 0;
   font-size: 16px;
-  padding: 10px 55px 10px 15px;
+  padding: 10px 43px 10px 15px;
+  background-color: #0F0F0F;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.search .input input::-webkit-input-placeholder {
+  color: #0F0F0F;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.search .input input::-moz-placeholder {
+  color: #0F0F0F;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.search .input input:-ms-input-placeholder {
+  color: #0F0F0F;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.search .input input::-ms-input-placeholder {
+  color: #0F0F0F;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.search .input input::placeholder {
+  color: #0F0F0F;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .footer__bg {
@@ -890,6 +990,13 @@ body._lock {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 14px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.articles__box-title:hover {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .articles__box-text {
@@ -939,7 +1046,7 @@ body._lock {
 }
 
 .articles__box-tab:hover {
-  color: rgb(74, 74, 177);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .partners {
@@ -1346,6 +1453,10 @@ body._lock {
     width: 20px;
   }
 
+  .main-mobile__phone:hover {
+    text-decoration: underline;
+  }
+
   .main-mobile__control {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1363,6 +1474,10 @@ body._lock {
   .main-mobile__control img {
     margin-right: 15px;
     width: 40px;
+  }
+
+  .main-mobile__control:hover {
+    text-decoration: underline;
   }
 
   .footer__holder {

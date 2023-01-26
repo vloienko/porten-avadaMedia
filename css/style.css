@@ -563,8 +563,10 @@ body._lock {
   transition: all 0.5s;
 }
 
+.no-webp .footer__bg {
+  background-image: url("../img/bg-lastPage.jpg"); }
+
 .footer__bg {
-  background-image: url("../img/bg-lastPage.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -704,8 +706,10 @@ body._lock {
   position: relative;
 }
 
+.no-webp .shop {
+  background-image: url("../img/bg-firstPage.jpg"); }
+
 .shop {
-  background-image: url("../img/bg-firstPage.jpg");
   background-position: center;
   background-size: cover;
   height: 810px;
@@ -1661,3 +1665,7 @@ body._lock {
             transform: none;
   }
 }
+
+.webp .footer__bg { background-image: url(../img/bg-lastPage.webp); }
+
+.webp .shop { background-image: url(../img/bg-firstPage.webp); }

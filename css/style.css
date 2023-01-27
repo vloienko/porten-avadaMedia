@@ -214,8 +214,7 @@ body._lock {
 .watch__box-bg {
   background-color: #191B1C;
   max-width: 260px;
-  max-height: 325px;
-  height: 100%;
+  height: 325px;
   margin-bottom: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,7 +236,6 @@ body._lock {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  padding: 30.5px 0px;
 }
 
 .watch__box-brand {
@@ -946,6 +944,14 @@ body._lock {
   overflow: hidden;
 }
 
+.collection-watch__box {
+  font-family: "Playfair Display", serif;
+}
+
+.collection-watch__box:hover p {
+  text-decoration: underline;
+}
+
 .gallery-watch {
   background-color: #000000;
   padding: 120px 0px 150px 0px;
@@ -974,10 +980,27 @@ body._lock {
           filter: blur(2.5px);
 }
 
-.gallery-watch__aside a {
+.gallery-watch__btn {
   position: absolute;
   background: rgba(25, 27, 28, 0.5);
   letter-spacing: normal;
+  cursor: pointer;
+}
+
+.watch__box {
+  display: none;
+}
+
+.watch__box:nth-child(1),
+.watch__box:nth-child(2),
+.watch__box:nth-child(3),
+.watch__box:nth-child(4),
+.watch__box:nth-child(5),
+.watch__box:nth-child(6),
+.watch__box:nth-child(7),
+.watch__box:nth-child(8) {
+  display: -ms-grid;
+  display: grid;
 }
 
 .articles {
@@ -1128,6 +1151,7 @@ body._lock {
   .watch__box-brand {
     font-size: 14px;
     margin-bottom: 5px;
+    margin-top: 10px;
   }
 
   .watch__box-price {
@@ -1297,11 +1321,13 @@ body._lock {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
   .watch__box-bg {
-    min-height: 90%;
+    height: 280px;
   }
+}
 
+@media (max-width: 767px) {
   .watch__box-bg img {
     max-height: 264px;
   }

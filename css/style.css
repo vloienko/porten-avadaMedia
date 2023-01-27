@@ -585,7 +585,7 @@ body._lock {
   transition: all 0.5s;
 }
 
-.footer__bg {
+.no-webp .footer__bg {
   background-image: url("../img/bg-lastPage.jpg"); }
 
 .footer__bg {
@@ -728,7 +728,7 @@ body._lock {
   position: relative;
 }
 
-.shop {
+.no-webp .shop {
   background-image: url("../img/bg-firstPage.jpg"); }
 
 .shop {
